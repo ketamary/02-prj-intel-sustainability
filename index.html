@@ -19,6 +19,94 @@
   />
 
   <link rel="stylesheet" href="style.css?v=5" />
+  <style>
+  .timeline-cards {
+    display: flex !important;
+    flex-wrap: nowrap !important;
+    gap: 22px !important;
+    overflow-x: auto !important;
+    scroll-snap-type: x mandatory;
+    padding-bottom: 16px;
+  }
+
+  .timeline-card {
+    flex: 0 0 320px !important;
+    min-width: 320px !important;
+    max-width: 320px !important;
+    scroll-snap-align: start;
+    overflow: hidden;
+    border-radius: 16px;
+    background: white !important;
+    box-shadow: 0 12px 32px rgba(16, 32, 51, .12);
+    transition: transform .25s ease, box-shadow .25s ease, filter .25s ease;
+  }
+
+  .timeline-card:hover,
+  .timeline-card:focus {
+    transform: translateY(-10px) scale(1.01);
+    box-shadow: 0 20px 42px rgba(16, 32, 51, .18);
+    filter: brightness(1.02);
+  }
+
+  .timeline-card img {
+    width: 100% !important;
+    height: 190px !important;
+    display: block;
+    object-fit: cover;
+  }
+
+  .timeline-card h2 {
+    width: max-content;
+    margin: 22px 22px 10px !important;
+    padding: 4px 12px;
+    border-radius: 999px;
+    color: white !important;
+    background: #0068b5 !important;
+    font-size: 1rem !important;
+  }
+
+  .timeline-card h3 {
+    margin: 0 22px 10px !important;
+    color: #073b69 !important;
+    font-size: 1.25rem !important;
+    line-height: 1.2;
+  }
+
+  .timeline-card p {
+    max-height: 0;
+    margin: 0 22px !important;
+    overflow: hidden;
+    color: #4e5f70;
+    opacity: 0;
+    transition: max-height .25s ease, opacity .25s ease, margin-bottom .25s ease;
+  }
+
+  .timeline-card:hover p,
+  .timeline-card:focus p {
+    max-height: 280px;
+    margin-bottom: 22px !important;
+    opacity: 1;
+  }
+
+  @media (max-width: 560px) {
+    .timeline-cards {
+      overflow-x: visible !important;
+      flex-wrap: wrap !important;
+    }
+
+    .timeline-card {
+      flex-basis: 100% !important;
+      min-width: auto !important;
+      max-width: 100% !important;
+    }
+
+    .timeline-card p {
+      max-height: 280px;
+      margin-bottom: 22px !important;
+      opacity: 1;
+    }
+  }
+</style>
 </head>
 
 <body>
