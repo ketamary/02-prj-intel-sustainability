@@ -1,17 +1,33 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Intel: Sustainability Through the Ages</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    id="bootstrapStylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  />
+
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
 
   <!-- Header / Hero Section -->
-  <header>
-    <div>
-      <img src="img/intel-header-logo.svg" alt="Intel Logo" />
+  <header class="hero">
+    <div class="hero-content">
+      <img src="img/intel-header-logo.svg" alt="Intel logo" />
 
       <h1>Sustainability Through the Ages</h1>
 
@@ -20,18 +36,30 @@
         to innovation has shaped a more sustainable future for technology
         and our planet.
       </p>
+
+      <div class="language-buttons" aria-label="Language layout controls">
+        <button id="englishBtn" class="btn btn-light" type="button">
+          English
+        </button>
+
+        <button id="arabicBtn" class="btn btn-outline-light" type="button">
+          العربية
+        </button>
+      </div>
     </div>
   </header>
 
-  <!-- Timeline Cards Section -->
-  <main>
-    <section>
-      <h2 class="section-title">Intel Sustainability Timeline</h2>
-      <div class="timeline-cards">
+  <main id="main-content">
+    <!-- Timeline Cards Section -->
+    <section class="timeline-section" aria-labelledby="timeline-title">
+      <h2 id="timeline-title" class="section-title">
+        Intel Sustainability Timeline
+      </h2>
 
-        <!-- Card 1: 1968 -->
-        <div>
-          <img src="img/1.jpg" alt="Intel founded in 1968" />
+      <div class="timeline-cards" aria-label="Intel sustainability timeline cards">
+
+        <article class="timeline-card" tabindex="0">
+          <img src="img/1.jpg" alt="Historic image representing Intel's founding in 1968" />
           <h2>1968</h2>
           <h3>Intel Founded</h3>
           <p>
@@ -39,11 +67,10 @@
             NM Electronics to Intel Corporation, laying the foundation for
             decades of technological innovation.
           </p>
-        </div>
+        </article>
 
-        <!-- Card 2: 1971 -->
-        <div>
-          <img src="img/2.jpg" alt="Intel microprocessor technology" />
+        <article class="timeline-card" tabindex="0">
+          <img src="img/2.jpg" alt="Close-up image representing early Intel microprocessor technology" />
           <h2>1971</h2>
           <h3>First Microprocessor</h3>
           <p>
@@ -51,22 +78,20 @@
             igniting the microprocessor revolution and propelling the future
             of computing devices.
           </p>
-        </div>
+        </article>
 
-        <!-- Card 3: 1978 -->
-        <div>
-          <img src="img/3.jpg" alt="Intel 8086 processor" />
+        <article class="timeline-card" tabindex="0">
+          <img src="img/3.jpg" alt="Technology image representing the Intel 8086 processor" />
           <h2>1978</h2>
           <h3>8086 Processor</h3>
           <p>
             Launch of the 8086 processor, establishing the x86 architecture
             that drives countless PCs and servers in the modern era.
           </p>
-        </div>
+        </article>
 
-        <!-- Card 4: 1985 -->
-        <div>
-          <img src="img/4.jpg" alt="Intel 386 processor" />
+        <article class="timeline-card" tabindex="0">
+          <img src="img/4.jpg" alt="Computer hardware image representing Intel's 386 processor" />
           <h2>1985</h2>
           <h3>386 Processor</h3>
           <p>
@@ -74,11 +99,10 @@
             ushering in a new era of performance and multitasking for
             personal computers.
           </p>
-        </div>
+        </article>
 
-        <!-- Card 5: 2006 -->
-        <div>
-          <img src="img/1.jpg" alt="Intel sustainability operations" />
+        <article class="timeline-card" tabindex="0">
+          <img src="img/1.jpg" alt="Industrial image representing Intel's sustainability operations" />
           <h2>2006</h2>
           <h3>Peak GHG Emissions</h3>
           <p>
@@ -87,64 +111,662 @@
             chemical abatement, renewable energy, and energy-efficient
             manufacturing to reverse this trend.
           </p>
-        </div>
+        </article>
 
-        <!-- Card 6: 2020 -->
-        <div>
-          <img src="img/2.jpg" alt="Intel innovation and RISE strategy" />
+        <article class="timeline-card" tabindex="0">
+          <img src="img/2.jpg" alt="Innovation image representing Intel's RISE strategy" />
           <h2>2020</h2>
           <h3>RISE Strategy</h3>
           <p>
-            Intel launches its RISE (Responsible, Inclusive, Sustainable,
-            Enabling) strategy and 2030 goals, aiming to drive industry-wide
-            progress on climate action, water stewardship, and waste reduction.
+            Intel launches its RISE strategy and 2030 goals, aiming to drive
+            industry-wide progress on climate action, water stewardship, and
+            waste reduction.
           </p>
-        </div>
+        </article>
 
-        <!-- Card 7: 2022 -->
-        <div>
-          <img src="img/3.jpg" alt="Intel technology for net-zero goals" />
+        <article class="timeline-card" tabindex="0">
+          <img src="img/3.jpg" alt="Technology image representing Intel's net-zero goals" />
           <h2>2022</h2>
           <h3>Net-Zero By 2040</h3>
           <p>
-            Intel announces its commitment to achieve net-zero greenhouse
-            gas emissions (Scope 1 and 2) across its global operations
-            by 2040, building on years of environmental initiatives.
+            Intel announces its commitment to achieve net-zero greenhouse gas
+            emissions across its global operations by 2040.
           </p>
-        </div>
+        </article>
 
-        <!-- Card 8: 2023 -->
-        <div>
-          <img src="img/4.jpg" alt="Intel renewable electricity progress" />
+        <article class="timeline-card" tabindex="0">
+          <img src="img/4.jpg" alt="Renewable energy image representing Intel's clean electricity progress" />
           <h2>2023</h2>
           <h3>Renewable Electricity</h3>
           <p>
             The company achieves 99% renewable electricity usage worldwide,
-            helping to drastically lower carbon emissions and driving progress
-            toward Intel's long-term sustainability goals.
+            helping to lower carbon emissions and support long-term
+            sustainability goals.
           </p>
-        </div>
+        </article>
 
-        <!-- Card 9: 2024 -->
-        <div>
-          <img src="img/1.jpg" alt="Intel sustainability summit" />
+        <article class="timeline-card" tabindex="0">
+          <img src="img/1.jpg" alt="Collaboration image representing Intel's sustainability summit" />
           <h2>2024</h2>
           <h3>Sustainability Summit</h3>
           <p>
             Intel hosts its first Sustainability Summit, uniting suppliers,
             government officials, and industry leaders to collaborate on
-            next-generation sustainable semiconductor manufacturing.
+            sustainable semiconductor manufacturing.
+          </p>
+        </article>
+
+      </div>
+    </section>
+
+    <p class="directions">
+      Scroll to view timeline | Hover or tab over cards to learn more!
+    </p>
+
+    <!-- Three Column Bootstrap Section -->
+    <section class="global-section py-5" aria-labelledby="global-title">
+      <div class="container">
+        <div class="section-intro">
+          <h2 id="global-title">Designing for a Global Audience</h2>
+          <p>
+            Intel's sustainability work reaches people around the world, so this
+            page now supports responsive layouts, accessibility, and right-to-left
+            language needs.
           </p>
         </div>
 
+        <div class="row g-4">
+          <div class="col-12 col-md-4">
+            <article class="feature-card h-100">
+              <h3>
+                <i class="bi bi-globe2" aria-hidden="true"></i>
+                Global Design
+              </h3>
+              <p>
+                The layout can switch between left-to-right and right-to-left
+                text flow so users from different language backgrounds can
+                navigate the page more naturally.
+              </p>
+              <button
+                class="btn btn-intel mt-auto"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#impactModal"
+                data-modal-title="Global Design"
+                data-modal-body="Localization helps a website feel usable for more people by supporting different reading directions, languages, and layout expectations."
+              >
+                Learn More
+              </button>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <article class="feature-card h-100">
+              <h3>
+                <i class="bi bi-universal-access-circle" aria-hidden="true"></i>
+                Accessibility
+              </h3>
+              <p>
+                Clear contrast, descriptive alt text, keyboard focus styles, and
+                labeled form fields help make the website easier to use for more
+                visitors.
+              </p>
+              <button
+                class="btn btn-intel mt-auto"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#impactModal"
+                data-modal-title="Accessibility"
+                data-modal-body="Accessibility improvements make digital content easier to use for people with different abilities, devices, and browsing needs."
+              >
+                Learn More
+              </button>
+            </article>
+          </div>
+
+          <div class="col-12 col-md-4">
+            <article class="feature-card h-100">
+              <h3>
+                <i class="bi bi-grid-3x3-gap-fill" aria-hidden="true"></i>
+                Responsive Layout
+              </h3>
+              <p>
+                Bootstrap's grid system keeps this section organized on desktops,
+                tablets, and phones by stacking the columns on smaller screens.
+              </p>
+              <button
+                class="btn btn-intel mt-auto"
+                type="button"
+                data-bs-toggle="modal"
+                data-bs-target="#impactModal"
+                data-modal-title="Responsive Layout"
+                data-modal-body="Responsive design allows the same webpage to adjust smoothly across different screen sizes without making users zoom or scroll awkwardly."
+              >
+                Learn More
+              </button>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Form -->
+    <section class="newsletter-section py-5" aria-labelledby="newsletter-title">
+      <div class="container">
+        <div class="newsletter-card">
+          <h2 id="newsletter-title">Subscribe to Intel Sustainability Updates</h2>
+          <p>
+            Sign up to receive updates about innovation, climate action, water
+            stewardship, and responsible technology.
+          </p>
+
+          <form id="newsletterForm" novalidate>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                class="form-control"
+                aria-describedby="emailHelp"
+                required
+              />
+              <div id="emailHelp" class="form-text">
+                Enter a valid email address. This demo form does not store your information.
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="language" class="form-label">Preferred language</label>
+              <select id="language" name="language" class="form-select">
+                <option value="en">English</option>
+                <option value="ar">Arabic</option>
+                <option value="es">Spanish</option>
+              </select>
+            </div>
+
+            <div class="form-check mb-3">
+              <input
+                id="updates"
+                class="form-check-input"
+                type="checkbox"
+                required
+              />
+              <label class="form-check-label" for="updates">
+                I agree to receive sustainability newsletter updates.
+              </label>
+            </div>
+
+            <button class="btn btn-intel" type="submit">
+              Subscribe
+            </button>
+
+            <p id="subscribeStatus" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </div>
       </div>
     </section>
   </main>
 
-  <p class="directions">Scroll to view timeline | Hover over cards to learn more!</p>
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>
+        Sources: Intel Virtual Vault, Intel Corporate Responsibility, and Intel Climate Transition Action Plan.
+      </p>
 
-  <footer>
-    Sources: Intel Virtual Vault, Intel Corporate Responsibility, and Intel Climate Transition Action Plan.
+      <nav aria-label="Footer navigation">
+        <a href="#main-content">Timeline</a>
+        <a href="#global-title">Global Design</a>
+        <a href="#newsletter-title">Newsletter</a>
+      </nav>
+    </div>
   </footer>
+
+  <!-- Bootstrap Modal LevelUp -->
+  <div
+    class="modal fade"
+    id="impactModal"
+    tabindex="-1"
+    aria-labelledby="impactModalLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2 class="modal-title fs-5" id="impactModalLabel">Learn More</h2>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+
+        <div class="modal-body">
+          <p></p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-intel" data-bs-dismiss="modal">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    const htmlElement = document.documentElement;
+    const bootstrapStylesheet = document.getElementById("bootstrapStylesheet");
+    const englishBtn = document.getElementById("englishBtn");
+    const arabicBtn = document.getElementById("arabicBtn");
+
+    const rtlLanguages = ["ar", "he", "fa", "ur"];
+
+    const translations = {
+      en: {
+        heroTitle: "Sustainability Through the Ages",
+        heroText:
+          "Explore Intel's journey through time, discovering how our commitment to innovation has shaped a more sustainable future for technology and our planet.",
+        timelineTitle: "Intel Sustainability Timeline",
+        directions: "Scroll to view timeline | Hover or tab over cards to learn more!",
+        globalTitle: "Designing for a Global Audience",
+        globalText:
+          "Intel's sustainability work reaches people around the world, so this page now supports responsive layouts, accessibility, and right-to-left language needs.",
+        learnMore: "Learn More",
+        close: "Close",
+
+        cards: [
+          {
+            year: "1968",
+            title: "Intel Founded",
+            body:
+              "Robert Noyce and Gordon Moore rename the newly formed company NM Electronics to Intel Corporation, laying the foundation for decades of technological innovation.",
+            alt: "Historic image representing Intel's founding in 1968"
+          },
+          {
+            year: "1971",
+            title: "First Microprocessor",
+            body:
+              "Intel debuts the 4004, the world's first commercial microprocessor, igniting the microprocessor revolution and propelling the future of computing devices.",
+            alt: "Close-up image representing early Intel microprocessor technology"
+          },
+          {
+            year: "1978",
+            title: "8086 Processor",
+            body:
+              "Launch of the 8086 processor, establishing the x86 architecture that drives countless PCs and servers in the modern era.",
+            alt: "Technology image representing the Intel 8086 processor"
+          },
+          {
+            year: "1985",
+            title: "386 Processor",
+            body:
+              "Intel introduces the 386 processor with 32-bit architecture, ushering in a new era of performance and multitasking for personal computers.",
+            alt: "Computer hardware image representing Intel's 386 processor"
+          },
+          {
+            year: "2006",
+            title: "Peak GHG Emissions",
+            body:
+              "This year marks Intel's highest annual greenhouse gas emissions for operations. Over later years, Intel invests in renewable energy, chemical abatement, and efficient manufacturing.",
+            alt: "Industrial image representing Intel's sustainability operations"
+          },
+          {
+            year: "2020",
+            title: "RISE Strategy",
+            body:
+              "Intel launches its RISE strategy and 2030 goals, aiming to drive progress on climate action, water stewardship, inclusion, and waste reduction.",
+            alt: "Innovation image representing Intel's RISE strategy"
+          },
+          {
+            year: "2022",
+            title: "Net-Zero By 2040",
+            body:
+              "Intel announces its commitment to achieve net-zero greenhouse gas emissions across its global operations by 2040.",
+            alt: "Technology image representing Intel's net-zero goals"
+          },
+          {
+            year: "2023",
+            title: "Renewable Electricity",
+            body:
+              "The company achieves 99% renewable electricity usage worldwide, helping to lower carbon emissions and support long-term sustainability goals.",
+            alt: "Renewable energy image representing Intel's clean electricity progress"
+          },
+          {
+            year: "2024",
+            title: "Sustainability Summit",
+            body:
+              "Intel hosts its first Sustainability Summit, bringing together suppliers, government officials, and industry leaders to collaborate on sustainable semiconductor manufacturing.",
+            alt: "Collaboration image representing Intel's sustainability summit"
+          }
+        ],
+
+        features: [
+          {
+            title: "Global Design",
+            body:
+              "The layout can switch between left-to-right and right-to-left text flow so users from different language backgrounds can navigate the page more naturally.",
+            modal:
+              "Localization helps a website feel usable for more people by supporting different reading directions, languages, and layout expectations."
+          },
+          {
+            title: "Accessibility",
+            body:
+              "Clear contrast, descriptive alt text, keyboard focus styles, and labeled form fields help make the website easier to use for more visitors.",
+            modal:
+              "Accessibility improvements make digital content easier to use for people with different abilities, devices, and browsing needs."
+          },
+          {
+            title: "Responsive Layout",
+            body:
+              "Bootstrap's grid system keeps this section organized on desktops, tablets, and phones by stacking the columns on smaller screens.",
+            modal:
+              "Responsive design allows the same webpage to adjust smoothly across different screen sizes without making users zoom or scroll awkwardly."
+          }
+        ],
+
+        newsletterTitle: "Subscribe to Intel Sustainability Updates",
+        newsletterText:
+          "Sign up to receive updates about innovation, climate action, water stewardship, and responsible technology.",
+        emailLabel: "Email address",
+        emailHelp: "Enter a valid email address. This demo form does not store your information.",
+        languageLabel: "Preferred language",
+        optionEnglish: "English",
+        optionArabic: "Arabic",
+        optionSpanish: "Spanish",
+        checkboxLabel: "I agree to receive sustainability newsletter updates.",
+        subscribe: "Subscribe",
+        error: "Please complete the form before subscribing.",
+        success: "Thank you for subscribing to Intel sustainability updates!",
+        footer:
+          "Sources: Intel Virtual Vault, Intel Corporate Responsibility, and Intel Climate Transition Action Plan.",
+        footerLinks: ["Timeline", "Global Design", "Newsletter"]
+      },
+
+      ar: {
+        heroTitle: "الاستدامة عبر العصور",
+        heroText:
+          "استكشف رحلة إنتل عبر الزمن، واكتشف كيف ساعد الالتزام بالابتكار في تشكيل مستقبل أكثر استدامة للتكنولوجيا وكوكبنا.",
+        timelineTitle: "الخط الزمني لاستدامة إنتل",
+        directions: "مرّر لعرض الخط الزمني | مرّر بالفأرة أو استخدم زر Tab لمعرفة المزيد!",
+        globalTitle: "التصميم لجمهور عالمي",
+        globalText:
+          "تصل جهود إنتل في الاستدامة إلى أشخاص حول العالم، لذلك يدعم هذا الموقع التخطيطات المتجاوبة، وإمكانية الوصول، واللغات التي تُقرأ من اليمين إلى اليسار.",
+        learnMore: "اعرف المزيد",
+        close: "إغلاق",
+
+        cards: [
+          {
+            year: "1968",
+            title: "تأسيس إنتل",
+            body:
+              "غيّر روبرت نويس وغوردون مور اسم الشركة الجديدة من NM Electronics إلى Intel Corporation، مما وضع أساسًا لعقود من الابتكار التقني.",
+            alt: "صورة تاريخية تمثل تأسيس إنتل عام 1968"
+          },
+          {
+            year: "1971",
+            title: "أول معالج دقيق",
+            body:
+              "قدمت إنتل معالج 4004، وهو أول معالج دقيق تجاري في العالم، مما ساعد على إطلاق ثورة المعالجات الدقيقة ومستقبل أجهزة الحوسبة.",
+            alt: "صورة تمثل تقنية المعالجات الدقيقة المبكرة من إنتل"
+          },
+          {
+            year: "1978",
+            title: "معالج 8086",
+            body:
+              "أطلقت إنتل معالج 8086، الذي أسس معمارية x86 المستخدمة في عدد كبير من الحواسيب والخوادم الحديثة.",
+            alt: "صورة تقنية تمثل معالج Intel 8086"
+          },
+          {
+            year: "1985",
+            title: "معالج 386",
+            body:
+              "قدمت إنتل معالج 386 بمعمارية 32 بت، مما فتح مرحلة جديدة من الأداء وتعدد المهام في الحواسيب الشخصية.",
+            alt: "صورة عتاد حاسوبي تمثل معالج Intel 386"
+          },
+          {
+            year: "2006",
+            title: "ذروة انبعاثات الغازات الدفيئة",
+            body:
+              "يمثل هذا العام أعلى مستوى لانبعاثات الغازات الدفيئة في عمليات إنتل. وبعد ذلك، استثمرت الشركة في الطاقة المتجددة وتقنيات التصنيع الأكثر كفاءة.",
+            alt: "صورة صناعية تمثل عمليات الاستدامة في إنتل"
+          },
+          {
+            year: "2020",
+            title: "استراتيجية RISE",
+            body:
+              "أطلقت إنتل استراتيجية RISE وأهداف 2030 لدعم التقدم في العمل المناخي، وإدارة المياه، والشمول، وتقليل النفايات.",
+            alt: "صورة ابتكار تمثل استراتيجية RISE من إنتل"
+          },
+          {
+            year: "2022",
+            title: "صافي انبعاثات صفري بحلول 2040",
+            body:
+              "أعلنت إنتل التزامها بالوصول إلى صافي انبعاثات غازات دفيئة صفري في عملياتها العالمية بحلول عام 2040.",
+            alt: "صورة تقنية تمثل أهداف إنتل للوصول إلى صافي انبعاثات صفري"
+          },
+          {
+            year: "2023",
+            title: "الكهرباء المتجددة",
+            body:
+              "حققت الشركة استخدامًا بنسبة 99٪ للكهرباء المتجددة عالميًا، مما ساعد على تقليل الانبعاثات ودعم أهداف الاستدامة طويلة المدى.",
+            alt: "صورة طاقة متجددة تمثل تقدم إنتل في الكهرباء النظيفة"
+          },
+          {
+            year: "2024",
+            title: "قمة الاستدامة",
+            body:
+              "استضافت إنتل أول قمة للاستدامة، وجمعت الموردين والمسؤولين الحكوميين وقادة الصناعة للتعاون في تصنيع أشباه موصلات أكثر استدامة.",
+            alt: "صورة تعاون تمثل قمة الاستدامة من إنتل"
+          }
+        ],
+
+        features: [
+          {
+            title: "التصميم العالمي",
+            body:
+              "يمكن للتخطيط أن ينتقل بين اتجاه القراءة من اليسار إلى اليمين ومن اليمين إلى اليسار، حتى يتمكن المستخدمون من لغات مختلفة من تصفح الصفحة بسهولة أكبر.",
+            modal:
+              "يساعد التوطين على جعل الموقع مناسبًا لعدد أكبر من المستخدمين من خلال دعم اتجاهات قراءة ولغات وتوقعات تصميم مختلفة."
+          },
+          {
+            title: "إمكانية الوصول",
+            body:
+              "يساعد التباين الواضح، والنص البديل للصور، وأنماط التركيز بلوحة المفاتيح، وتسميات النماذج على جعل الموقع أسهل استخدامًا.",
+            modal:
+              "تحسينات إمكانية الوصول تجعل المحتوى الرقمي أسهل استخدامًا للأشخاص ذوي الاحتياجات والأجهزة وطرق التصفح المختلفة."
+          },
+          {
+            title: "تخطيط متجاوب",
+            body:
+              "يساعد نظام الشبكة في Bootstrap على تنظيم هذا القسم على أجهزة سطح المكتب والأجهزة اللوحية والهواتف من خلال ترتيب الأعمدة حسب حجم الشاشة.",
+            modal:
+              "يسمح التصميم المتجاوب للصفحة نفسها بالتكيف مع أحجام الشاشات المختلفة دون أن يضطر المستخدم إلى التكبير أو التمرير بشكل مزعج."
+          }
+        ],
+
+        newsletterTitle: "اشترك في تحديثات الاستدامة من إنتل",
+        newsletterText:
+          "اشترك للحصول على تحديثات حول الابتكار، والعمل المناخي، وإدارة المياه، والتكنولوجيا المسؤولة.",
+        emailLabel: "البريد الإلكتروني",
+        emailHelp: "أدخل بريدًا إلكترونيًا صالحًا. هذا النموذج التجريبي لا يخزن معلوماتك.",
+        languageLabel: "اللغة المفضلة",
+        optionEnglish: "الإنجليزية",
+        optionArabic: "العربية",
+        optionSpanish: "الإسبانية",
+        checkboxLabel: "أوافق على تلقي تحديثات نشرة الاستدامة.",
+        subscribe: "اشترك",
+        error: "يرجى إكمال النموذج قبل الاشتراك.",
+        success: "شكرًا لاشتراكك في تحديثات الاستدامة من إنتل!",
+        footer:
+          "المصادر: Intel Virtual Vault و Intel Corporate Responsibility و Intel Climate Transition Action Plan.",
+        footerLinks: ["الخط الزمني", "التصميم العالمي", "النشرة"]
+      }
+    };
+
+    function normalizeLanguage(lang) {
+      const shortLang = (lang || "en").toLowerCase().split("-")[0];
+      return rtlLanguages.includes(shortLang) ? "ar" : "en";
+    }
+
+    function updateText(lang) {
+      const text = translations[lang];
+
+      document.querySelector(".hero h1").textContent = text.heroTitle;
+      document.querySelector(".hero p").textContent = text.heroText;
+      document.getElementById("timeline-title").textContent = text.timelineTitle;
+      document.querySelector(".directions").textContent = text.directions;
+
+      const cards = document.querySelectorAll(".timeline-card");
+      cards.forEach(function (card, index) {
+        if (!text.cards[index]) return;
+
+        card.querySelector("h2").textContent = text.cards[index].year;
+        card.querySelector("h3").textContent = text.cards[index].title;
+        card.querySelector("p").textContent = text.cards[index].body;
+        card.querySelector("img").alt = text.cards[index].alt;
+      });
+
+      document.getElementById("global-title").textContent = text.globalTitle;
+      document.querySelector(".section-intro p").textContent = text.globalText;
+
+      const featureCards = document.querySelectorAll(".feature-card");
+      featureCards.forEach(function (card, index) {
+        if (!text.features[index]) return;
+
+        const icon = card.querySelector("h3 i").outerHTML;
+        card.querySelector("h3").innerHTML = icon + " " + text.features[index].title;
+        card.querySelector("p").textContent = text.features[index].body;
+
+        const button = card.querySelector("button");
+        button.textContent = text.learnMore;
+        button.setAttribute("data-modal-title", text.features[index].title);
+        button.setAttribute("data-modal-body", text.features[index].modal);
+      });
+
+      document.getElementById("newsletter-title").textContent = text.newsletterTitle;
+      document.querySelector(".newsletter-card > p").textContent = text.newsletterText;
+      document.querySelector("label[for='email']").textContent = text.emailLabel;
+      document.getElementById("emailHelp").textContent = text.emailHelp;
+      document.querySelector("label[for='language']").textContent = text.languageLabel;
+
+      const languageSelect = document.getElementById("language");
+      languageSelect.options[0].textContent = text.optionEnglish;
+      languageSelect.options[1].textContent = text.optionArabic;
+      languageSelect.options[2].textContent = text.optionSpanish;
+      languageSelect.value = lang;
+
+      document.querySelector("label[for='updates']").textContent = text.checkboxLabel;
+      document.querySelector("#newsletterForm button[type='submit']").textContent = text.subscribe;
+
+      document.querySelector(".site-footer p").textContent = text.footer;
+
+      const footerLinks = document.querySelectorAll(".site-footer a");
+      footerLinks.forEach(function (link, index) {
+        if (text.footerLinks[index]) {
+          link.textContent = text.footerLinks[index];
+        }
+      });
+
+      document.querySelector("#impactModal .modal-footer button").textContent = text.close;
+    }
+
+    let currentLanguage = "";
+
+    function applyLanguage(lang) {
+      const chosenLang = normalizeLanguage(lang);
+      const isRTL = chosenLang === "ar";
+
+      if (currentLanguage === chosenLang && htmlElement.dir === (isRTL ? "rtl" : "ltr")) {
+        return;
+      }
+
+      currentLanguage = chosenLang;
+
+      if (htmlElement.lang !== chosenLang) {
+        htmlElement.lang = chosenLang;
+      }
+
+      htmlElement.dir = isRTL ? "rtl" : "ltr";
+      document.body.classList.toggle("rtl-mode", isRTL);
+
+      bootstrapStylesheet.href = isRTL
+        ? "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css"
+        : "https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css";
+
+      updateText(chosenLang);
+
+      englishBtn.className = isRTL ? "btn btn-outline-light" : "btn btn-light";
+      arabicBtn.className = isRTL ? "btn btn-light" : "btn btn-outline-light";
+    }
+
+    englishBtn.addEventListener("click", function () {
+      applyLanguage("en");
+    });
+
+    arabicBtn.addEventListener("click", function () {
+      applyLanguage("ar");
+    });
+
+    document.getElementById("language").addEventListener("change", function () {
+      if (this.value === "ar") {
+        applyLanguage("ar");
+      } else if (this.value === "en") {
+        applyLanguage("en");
+      }
+    });
+
+    const languageObserver = new MutationObserver(function () {
+      const observedLang = normalizeLanguage(htmlElement.lang);
+
+      if (observedLang !== currentLanguage) {
+        applyLanguage(observedLang);
+      }
+    });
+
+    languageObserver.observe(htmlElement, {
+      attributes: true,
+      attributeFilter: ["lang"]
+    });
+
+    const impactModal = document.getElementById("impactModal");
+
+    impactModal.addEventListener("show.bs.modal", function (event) {
+      const button = event.relatedTarget;
+      const title = button.getAttribute("data-modal-title");
+      const body = button.getAttribute("data-modal-body");
+
+      impactModal.querySelector(".modal-title").textContent = title;
+      impactModal.querySelector(".modal-body p").textContent = body;
+    });
+
+    const newsletterForm = document.getElementById("newsletterForm");
+    const subscribeStatus = document.getElementById("subscribeStatus");
+
+    newsletterForm.addEventListener("submit", function (event) {
+      event.preventDefault();
+
+      const lang = normalizeLanguage(htmlElement.lang);
+      const text = translations[lang];
+
+      if (!newsletterForm.checkValidity()) {
+        newsletterForm.classList.add("was-validated");
+        subscribeStatus.textContent = text.error;
+        return;
+      }
+
+      subscribeStatus.textContent = text.success;
+      newsletterForm.reset();
+      document.getElementById("language").value = lang;
+      newsletterForm.classList.remove("was-validated");
+    });
+
+    applyLanguage("en");
+  </script>
 </body>
 </html>
